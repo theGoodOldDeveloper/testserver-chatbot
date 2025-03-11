@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "description": "introduce chatbots",
   "keywords": [],
+  "homepage": "https://github.com/theGoodOldDeveloper/testserver-chatbot#readme",
+  "bugs": {
+    "url": "https://github.com/theGoodOldDeveloper/testserver-chatbot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theGoodOldDeveloper/testserver-chatbot.git"
+  },
   "license": "MIT",
   "author": "photovegh",
   "type": "commonjs",

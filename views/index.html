@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <style>
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in {
+        animation: fade-in 1.2s ease-out;
+      }
+    </style>
   </head>
   <body class="bg-gray-100 flex flex-col min-h-screen">
     <!-- Header -->
@@ -13,21 +28,16 @@
       <div
         class="container mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4"
       >
-        <!-- Logo -->
         <img
           src="/img/portrait.jpg"
           alt="Logo"
-          class="w-16 h-16 rounded-full"
+          class="w-12 h-12 rounded-full"
         />
-
-        <!-- Title -->
         <h1
-          class="text-xl md:text-2xl font-bold text-gray-800 text-center md:text-left"
+          class="text-lg md:text-xl font-bold text-gray-800 text-center md:text-left"
         >
           AI Chatbots for Real Impact
         </h1>
-
-        <!-- Button -->
         <button
           class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition"
         >
@@ -37,11 +47,10 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-gray-100 py-16">
+    <section class="bg-gray-100 py-12 md:py-20">
       <div class="container mx-auto px-6 text-center">
-        <!-- IDE KERÜL MAJD AZ ÜTŐS IDÉZET! -->
         <h1
-          class="text-xl md:text-5xl font-extrabold text-gray-800 mb-6 leading-snug md:leading-tight"
+          class="text-xl md:text-5xl font-extrabold text-gray-800 mb-6 leading-snug md:leading-tight animate-fade-in"
         >
           Chatbots that Speak Your Customers' Language —
           <span class="text-blue-500">24/7</span>.
@@ -50,16 +59,16 @@
             >Engage. Help. Sell. Without lifting a finger.</span
           >
         </h1>
-
-        <p class="text-lg text-gray-600 mb-8">
+        <p class="text-base md:text-lg text-gray-600 mb-8 animate-fade-in">
           Engage customers, automate conversations, and grow your business — all
           with smart AI chatbots.
         </p>
-        <button
-          class="bg-green-500 text-white px-8 py-3 rounded-lg text-lg hover:bg-green-600 transition"
+        <a
+          href="#"
+          class="bg-green-500 text-white px-8 py-3 rounded-lg text-lg hover:bg-green-600 transition transform hover:scale-105 inline-block animate-fade-in"
         >
           Try the Demo Chatbot
-        </button>
+        </a>
       </div>
     </section>
 
@@ -67,11 +76,10 @@
     <section class="bg-white py-12">
       <div class="container mx-auto px-6">
         <h2
-          class="text-3xl md:text-5xl font-bold text-center text-gray-800 leading-tight mb-10"
+          class="text-2xl md:text-4xl font-bold text-center text-gray-800 leading-tight mb-10"
         >
           How AI Chatbots Can Transform Your Business
         </h2>
-
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-600">
           <div
             class="p-6 border rounded-lg shadow hover:shadow-lg transition bg-gray-50"
@@ -124,10 +132,10 @@
       <div
         class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center"
       >
-        <p class="text-sm md:text-base">
+        <p class="text-xs md:text-sm">
           &copy; 2024 The Good Old Developer. All rights reserved.
         </p>
-        <div class="mt-2 md:mt-0 text-sm md:text-base">
+        <div class="mt-2 md:mt-0 text-xs md:text-sm">
           <a href="#" class="hover:text-gray-400">Privacy Policy</a> |
           <a href="#" class="hover:text-gray-400">Terms & Conditions</a>
         </div>
